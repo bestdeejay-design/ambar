@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMBAR — Food Hub & Digital Platform | Инвестиционный проект</title>
+
+<meta name="description" content="Инвестиционное предложение: фуд-хаб «Амбар» и цифровая платформа «Главный Двор» в Гостином Дворе, Санкт-Петербург. Выручка 13,85 млн руб/мес, окупаемость для инвестора от 45 дней, 30+ резидентов.">
+<meta name="keywords" content="амбар, инвестиции, фуд-хаб, фуд-молл, главный двор, гостиный двор, санкт-петербург, food tech, платформа, qr-заказ, общепит, окупаемость, revenue sharing">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ООО «Атмосфера»">
+<link rel="canonical" href="https://bestdeejay-design.github.io/ambar/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMBAR — Food Hub & Digital Platform">
+<meta property="og:title" content="AMBAR — Food Hub & Digital Platform | Инвестиционный проект 2026">
+<meta property="og:description" content="Фуд-хаб в сердце Петербурга. 13,85 млн руб/мес выручка. Окупаемость для инвестора от 45 дней. 30+ резидентов, единая QR-корзина, 6% с каждого заказа.">
+<meta property="og:url" content="https://bestdeejay-design.github.io/ambar/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://bestdeejay-design.github.io/ambar/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/svg+xml">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AMBAR — Food Hub & Digital Platform | Инвестиционный проект">
+<meta name="twitter:description" content="Фуд-хаб в Гостином Дворе. Окупаемость от 45 дней. 13,85M выручка/мес.">
+<meta name="twitter:image" content="https://bestdeejay-design.github.io/ambar/og-image.svg">
+
+<!-- Mobile -->
+<meta name="theme-color" content="#c96b4d">
+<meta name="apple-mobile-web-app-title" content="AMBAR">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c96b4d'/%3E%3Cpath d='M8 12h16M8 16h16M8 20h12' stroke='%23fff' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ООО «Атмосфера»",
+  "alternateName": "AMBAR",
+  "description": "Фуд-хаб и цифровая платформа «Главный Двор»",
+  "url": "https://bestdeejay-design.github.io/ambar/",
+  "email": "hello@arental.ru",
+  "telephone": "+79119287478",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Невский пр., 35, двор Большого Гостиного Двора",
+    "addressLocality": "Санкт-Петербург",
+    "addressCountry": "RU"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Кузюков Сергей Сергеевич",
+    "jobTitle": "Генеральный директор"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        heading: ['"Playfair Display"', 'Georgia', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        terracotta: { 50:'#fdf5f2',100:'#fae9e2',200:'#f4d2c5',300:'#eab09a',400:'#d4876e',500:'#c96b4d',600:'#b5573b',700:'#964630',800:'#7a3c2a',900:'#643326' },
+        sage:      { 50:'#f4f7f4',100:'#e4ece5',200:'#c9d9cb',300:'#a3bfa6',400:'#7a9b7e',500:'#5d7f62',600:'#48644c',700:'#3a503d',800:'#304133',900:'#28362b' },
+        slate:     { 50:'#f6f6f7',100:'#e8e8ea',200:'#d1d1d5',300:'#b0b0b7',400:'#878792',500:'#6c6c77',600:'#54545f',700:'#44444e',800:'#3a3a43',900:'#2d2d35' },
+        beige:     { 50:'#fdfcfa',100:'#faf6f1',200:'#f5ede2',300:'#eddfcc',400:'#e2cbaa',500:'#d5b58a',600:'#c59a64',700:'#a87e4f',800:'#8b6743',900:'#735539' },
+        darkbg:    { DEFAULT:'#1e1e24',light:'#252529',card:'#2a2a32' },
+      },
+    }
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg-page: #faf6f1;
+    --bg-card: rgba(255,255,255,0.6);
+    --border-card: rgba(255,255,255,0.8);
+    --glass-blur: 16px;
+    --hero-bg: linear-gradient(180deg, #faf6f1 0%, #f5ede2 50%, #e4ece5 100%);
+    --section-alt: linear-gradient(180deg, #faf6f1 0%, #f5ede2 100%);
+    --section-sage: linear-gradient(180deg, #faf6f1 0%, #e4ece5 100%);
+    --section-contrast: linear-gradient(135deg, #2d2d35 0%, #3a3a43 100%);
+    --progress-bg: #f5ede2;
+    --download-bg: rgba(255,255,255,0.4);
+  }
+  .dark {
+    --bg-page: #1e1e24;
+    --bg-card: rgba(42,42,50,0.65);
+    --border-card: rgba(255,255,255,0.08);
+    --glass-blur: 20px;
+    --hero-bg: linear-gradient(180deg, #1e1e24 0%, #252529 50%, #1e1e24 100%);
+    --section-alt: linear-gradient(180deg, #1e1e24 0%, #252529 100%);
+    --section-sage: linear-gradient(180deg, #1e1e24 0%, #252529 100%);
+    --section-contrast: linear-gradient(135deg, #141419 0%, #1a1a20 100%);
+    --progress-bg: #3a3a43;
+    --download-bg: rgba(42,42,50,0.5);
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg-page);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .glass {
+    background: var(--bg-card);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--border-card);
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03);
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .dark .glass { box-shadow: 0 4px 24px rgba(0,0,0,0.25), 0 1px 3px rgba(0,0,0,0.15); }
+  .glass:hover { box-shadow: 0 8px 36px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04); }
+  .dark .glass:hover { box-shadow: 0 8px 36px rgba(0,0,0,0.35), 0 2px 6px rgba(0,0,0,0.2); }
+
+  .glass-strong {
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid rgba(255,255,255,0.9);
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+  .dark .glass-strong { background: rgba(30,30,36,0.85); border-color: rgba(255,255,255,0.06); }
+
+  .download-card {
+    background: var(--download-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border-card);
+    border-radius: 0.875rem;
+    transition: all 0.2s ease;
+  }
+  .download-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+  .dark .download-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+
+  .hero-bg       { background: var(--hero-bg); }
+  .section-alt   { background: var(--section-alt); }
+  .section-sage  { background: var(--section-sage); }
+  .section-dark  { background: var(--section-contrast); }
+  .progress-bg   { background: var(--progress-bg); }
+
+  .theme-toggle {
+    position: relative; width: 52px; height: 28px;
+    border-radius: 28px; background: #d1d1d5;
+    cursor: pointer; transition: background 0.3s ease;
+    border: none; outline: none;
+  }
+  .dark .theme-toggle { background: #44444e; }
+  .theme-toggle::after {
+    content: '';
+    position: absolute; top: 3px; left: 3px;
+    width: 22px; height: 22px; border-radius: 50%;
+    background: #fff; transition: transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+  .dark .theme-toggle::after { transform: translateX(24px); }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #c96b4d 0%, #a87e4f 50%, #7a9b7e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #c96b4d, #a87e4f);
+    box-shadow: 0 4px 20px rgba(201,107,77,0.35);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .btn-primary:hover { opacity: 0.9; transform: scale(1.03); }
+
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    border-radius: 9999px;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.05); }
+
+  .dot-terracotta { background: #c96b4d; }
+  .dot-sage { background: #7a9b7e; }
+  .dot-beige { background: #a87e4f; }
+
+  #back-to-top {
+    position: fixed; bottom: 24px; right: 24px; z-index: 50;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--bg-card);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--border-card);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+    color: #54545f;
+  }
+  .dark #back-to-top { color: #b0b0b7; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+  #back-to-top.visible { opacity: 1; visibility: visible; }
+  #back-to-top:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+  .dark #back-to-top:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+
+  .sticky-cta {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 49;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(0,0,0,0.06);
+    padding: 12px 16px;
+    display: flex; align-items: center; justify-content: center;
+    gap: 16px;
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+  }
+  .dark .sticky-cta {
+    background: rgba(30,30,36,0.9);
+    border-top-color: rgba(255,255,255,0.06);
+  }
+  .sticky-cta.visible { transform: translateY(0); }
+  .sticky-cta-value {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.125rem; font-weight: 700;
+  }
+  @media (max-width: 640px) {
+    .sticky-cta { gap: 10px; padding: 10px 12px; }
+    .sticky-cta-value { font-size: 0.9rem; }
+  }
+
+  @media print {
+    body { background: #fff !important; color: #000 !important; font-size: 11pt; }
+    nav,.theme-toggle,.no-print,button:not(.keep-print),.btn-primary,.btn-outline,#back-to-top { display: none !important; }
+    .glass,.glass-strong,.download-card {
+      background: #fff !important; backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important; border: 1px solid #ddd !important;
+      box-shadow: none !important; break-inside: avoid;
+    }
+    .section-dark { background: #fff !important; }
+    .section-dark * { color: #000 !important; }
+    .text-gradient { -webkit-text-fill-color: #000 !important; }
+    .dark .glass,.dark .glass-strong,.dark .download-card,.dark body { background: #fff !important; color: #000 !important; border-color: #ddd !important; }
+    .dark * { color: #000 !important; }
+    a { color: #000 !important; text-decoration: underline; }
+    @page { margin: 2cm; }
+  }
+
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+
+<body class="min-h-screen antialiased text-slate-800 dark:text-slate-100">
+
+<!-- ========= HEADER ========= -->
+<header class="fixed top-0 left-0 right-0 z-50 no-print">
+  <div class="glass-strong mx-4 mt-4 md:mx-6 lg:mx-auto lg:max-w-6xl">
+    <div class="flex items-center justify-between px-5 py-3 md:px-8 md:py-4">
+      <a href="#" class="flex items-center gap-2.5 no-underline shrink-0">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" class="fill-terracotta-500"/><path d="M8 12h16M8 16h16M8 20h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span class="font-heading text-xl font-bold tracking-wide text-slate-800 dark:text-slate-100">AMBAR</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#about" class="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-terracotta-500 dark:hover:text-terracotta-400 transition-colors no-underline">Локация</a>
+        <a href="#financials" class="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-terracotta-500 dark:hover:text-terracotta-400 transition-colors no-underline">Финансы</a>
+        <a href="#invest" class="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-terracotta-500 dark:hover:text-terracotta-400 transition-colors no-underline">Инвестиции</a>
+        <a href="#tech" class="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-terracotta-500 dark:hover:text-terracotta-400 transition-colors no-underline">Платформа</a>
+        <a href="#contacts" class="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-terracotta-500 dark:hover:text-terracotta-400 transition-colors no-underline">Контакты</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+        <a href="#contacts" class="no-print hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-full btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Связаться
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========= HERO ========= -->
+<section class="hero-bg relative min-h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full opacity-10 dark:opacity-5" style="background: radial-gradient(circle, #c96b4d, transparent 70%);"></div>
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full opacity-[0.08] dark:opacity-[0.04]" style="background: radial-gradient(circle, #7a9b7e, transparent 70%);"></div>
+    <div class="absolute top-1/3 left-1/4 w-64 h-64 rounded-full opacity-[0.05] dark:opacity-[0.03]" style="background: radial-gradient(circle, #d5b58a, transparent 70%);"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-4xl px-6 pt-24 pb-16 text-center">
+    <div class="glass inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      <span class="text-sm font-medium text-slate-600 dark:text-slate-300">Инвестиционное предложение 2026</span>
+    </div>
+
+    <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-slate-800 dark:text-slate-100">
+      Food Hub
+      <span class="block text-gradient">+ Digital Platform</span>
+    </h1>
+
+    <p class="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed text-slate-600 dark:text-slate-300">
+      Фуд-хаб «Амбар» в сердце Петербурга — эксклюзивная платформа для 30+ резидентов,
+      гарантированный трафик 100 000+ гостей за сезон, окупаемость для инвестора от 45 дней.
+    </p>
+
+    <a href="#downloads" class="no-print inline-flex items-center gap-2.5 px-8 py-3.5 text-base font-semibold text-white rounded-full btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10M8 11l4 4 4-4M4 17h16v4H4z"/></svg>
+      Получить предложение
+    </a>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-2xl md:text-3xl font-bold text-terracotta-500">13,85M</div>
+        <div class="text-xs mt-1.5 font-medium text-slate-400 dark:text-slate-500">Выручка, руб/мес</div>
+      </div>
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-2xl md:text-3xl font-bold text-sage-400">5M+</div>
+        <div class="text-xs mt-1.5 font-medium text-slate-400 dark:text-slate-500">Прибыль, руб/мес</div>
+      </div>
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-2xl md:text-3xl font-bold text-beige-700">45 дн</div>
+        <div class="text-xs mt-1.5 font-medium text-slate-400 dark:text-slate-500">Окупаемость для инвестора</div>
+      </div>
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-2xl md:text-3xl font-bold text-terracotta-500">350K</div>
+        <div class="text-xs mt-1.5 font-medium text-slate-400 dark:text-slate-500">Гостей за сезон</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========= ABOUT: LOCATION ========= -->
+<section id="about" class="section-alt py-16 md:py-24 px-6">
+  <div class="mx-auto max-w-6xl">
+    <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+      <div>
+        <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-terracotta-500">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Локация
+        </div>
+        <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-slate-800 dark:text-slate-100">
+          Невский, 35. Гостиный Двор.
+        </h2>
+        <p class="text-base md:text-lg leading-relaxed mb-6 text-slate-600 dark:text-slate-300">
+          Отдельное здание 249,5 м² с закрытым двориком. Договор субаренды подписан 29.05.2026.
+          Площадка 2 ГА, главный туристический маршрут Петербурга. Режим: 10:00–22:00 (до 06:00).
+        </p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span class="text-slate-600 dark:text-slate-300">Прогноз трафика: <strong class="text-slate-800 dark:text-slate-100">100 000 – 350 000</strong> гостей за сезон</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span class="text-slate-600 dark:text-slate-300">Среднедневной трафик: <strong class="text-slate-800 dark:text-slate-100">1 100 – 3 900</strong> человек</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span class="text-slate-600 dark:text-slate-300">Пиковые дни: до <strong class="text-slate-800 dark:text-slate-100">7 000 – 10 000</strong> человек</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="glass p-6 md:p-8">
+        <h3 class="font-heading text-xl font-bold mb-5 text-slate-800 dark:text-slate-100">Источники трафика</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between text-sm font-medium mb-1.5 text-slate-600 dark:text-slate-300">
+              <span>Туристы Невского проспекта</span>
+              <span class="font-bold text-terracotta-500">10%</span>
+            </div>
+            <div class="h-2 rounded-full progress-bg"><div class="h-2 rounded-full" style="width:10%; background: linear-gradient(90deg, #c96b4d, #d4876e);"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm font-medium mb-1.5 text-slate-600 dark:text-slate-300">
+              <span>Горожане и офисные сотрудники</span>
+              <span class="font-bold text-terracotta-400">30%</span>
+            </div>
+            <div class="h-2 rounded-full progress-bg"><div class="h-2 rounded-full" style="width:30%; background: linear-gradient(90deg, #d4876e, #eab09a);"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm font-medium mb-1.5 text-slate-600 dark:text-slate-300">
+              <span>Аудитория событий</span>
+              <span class="font-bold text-beige-700">50%</span>
+            </div>
+            <div class="h-2 rounded-full progress-bg"><div class="h-2 rounded-full" style="width:50%; background: linear-gradient(90deg, #a87e4f, #d5b58a);"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm font-medium mb-1.5 text-slate-600 dark:text-slate-300">
+              <span>Локальные жители и студенты</span>
+              <span class="font-bold text-sage-400">10%</span>
+            </div>
+            <div class="h-2 rounded-full progress-bg"><div class="h-2 rounded-full" style="width:10%; background: linear-gradient(90deg, #7a9b7e, #a3bfa6);"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========= ALREADY INVESTED ========= -->
+<section class="bg-beige-100 dark:bg-darkbg py-12 md:py-16 px-6">
+  <div class="mx-auto max-w-6xl">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-terracotta-500">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Уже вложено в проект
+      </div>
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-800 dark:text-slate-100">7 300 000+ руб.</h2>
+      <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-xl mx-auto">Вклад ООО «Атмосфера» на этапе подготовки</p>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-4 text-center">
+      <div class="glass p-5">
+        <div class="font-heading text-2xl font-bold text-terracotta-500 mb-1">6 000 000</div>
+        <div class="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">Разработка и подготовка</div>
+        <p class="text-xs text-slate-400 dark:text-slate-500">Платформа, дизайн, юристы, согласования</p>
+      </div>
+      <div class="glass p-5">
+        <div class="font-heading text-2xl font-bold text-sage-400 mb-1">900 000</div>
+        <div class="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">Оборудование и мебель</div>
+        <p class="text-xs text-slate-400 dark:text-slate-500">Пиццепечь, холодильное, мебель, мойки</p>
+      </div>
+      <div class="glass p-5">
+        <div class="font-heading text-2xl font-bold text-beige-700 mb-1">400 000</div>
+        <div class="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">Продукты и расходники</div>
+        <p class="text-xs text-slate-400 dark:text-slate-500">Складские запасы на старте</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========= PARTNERS ========= -->
+<section class="bg-beige-100 dark:bg-darkbg py-16 px-6">
+  <div class="mx-auto max-w-6xl text-center">
+    <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-sage-400">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Подтверждённые партнёры
+    </div>
+    <h2 class="font-heading text-3xl md:text-4xl font-bold mb-10 text-slate-800 dark:text-slate-100">С кем мы работаем</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+      <div class="glass p-5 flex flex-col items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        <span class="text-sm font-semibold text-slate-800 dark:text-slate-100">Газпром Медиа</span>
+      </div>
+      <div class="glass p-5 flex flex-col items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/><path d="M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"/></svg>
+        <span class="text-sm font-semibold text-slate-800 dark:text-slate-100">ФК «Зенит»</span>
+      </div>
+      <div class="glass p-5 flex flex-col items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <span class="text-sm font-semibold text-slate-800 dark:text-slate-100">ВК-Фест</span>
+      </div>
+      <div class="glass p-5 flex flex-col items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        <span class="text-sm font-semibold text-slate-800 dark:text-slate-100">Блог Фиеста</span>
+      </div>
+      <div class="glass p-5 flex flex-col items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        <span class="text-sm font-semibold text-slate-800 dark:text-slate-100">КудаGo</span>
+      </div>
+    </div>
+
+    <div class="mt-8 grid sm:grid-cols-3 gap-3 max-w-2xl mx-auto text-xs text-slate-500 dark:text-slate-400">
+      <div class="glass p-3">Федеральные эфиры и рекламные кампании</div>
+      <div class="glass p-3">Фан-зоны, трансляции матчей, мерч</div>
+      <div class="glass p-3">Таргет, коллаборации с блогерами</div>
+    </div>
+
+    <p class="mt-6 text-xs text-slate-400 dark:text-slate-500">Логотипы партнёров предоставляются после подписания NDA</p>
+  </div>
+</section>
+
+<!-- ========= EVENTS & CONVERSION ========= -->
+<section class="section-sage py-16 px-6">
+  <div class="mx-auto max-w-6xl">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-sage-400">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Мероприятия и конверсия
+      </div>
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-3 text-slate-800 dark:text-slate-100">Что приводит гостей</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="glass p-6">
+        <h3 class="font-heading text-lg font-bold mb-4 text-slate-800 dark:text-slate-100">Регулярные события</h3>
+        <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-300">
+          <li class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Еженедельные концерты на главной сцене (пт–вс)
+          </li>
+          <li class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Фестивали уличной еды и локальных брендов (ежемесячно)
+          </li>
+          <li class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Спортивные трансляции на большом экране
+          </li>
+          <li class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Детские программы и мастер-классы (выходные)
+          </li>
+          <li class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Корпоративные мероприятия и закрытые показы
+          </li>
+        </ul>
+      </div>
+
+      <div class="glass p-6">
+        <h3 class="font-heading text-lg font-bold mb-4 text-slate-800 dark:text-slate-100">Конверсия в посетителей «Амбара»</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between text-sm mb-1"><span class="text-slate-600 dark:text-slate-300">Проходящий трафик заходит</span><span class="font-bold text-terracotta-500">15-20%</span></div>
+            <div class="h-1.5 rounded-full progress-bg"><div class="h-1.5 rounded-full" style="width:18%; background:#c96b4d;"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-1"><span class="text-slate-600 dark:text-slate-300">Конверсия в заказ</span><span class="font-bold text-sage-400">5-8%</span></div>
+            <div class="h-1.5 rounded-full progress-bg"><div class="h-1.5 rounded-full" style="width:6%; background:#7a9b7e;"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-1"><span class="text-slate-600 dark:text-slate-300">Повторные визиты за сезон</span><span class="font-bold text-beige-700">30-40%</span></div>
+            <div class="h-1.5 rounded-full progress-bg"><div class="h-1.5 rounded-full" style="width:35%; background:#a87e4f;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========= FINANCIALS ========= -->
+<section id="financials" class="bg-beige-100 dark:bg-darkbg py-16 md:py-24 px-6">
+  <div class="mx-auto max-w-6xl">
+    <div class="text-center mb-12 md:mb-16">
+      <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-terracotta-500">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Финансовые показатели
+      </div>
+      <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-800 dark:text-slate-100">Окупаемость для инвестора от 45 дней</h2>
+      <p class="mt-4 text-base md:text-lg max-w-2xl mx-auto text-slate-600 dark:text-slate-300">
+        Подтверждённые метрики из работающей пиццерии. Прогноз на основе реалистичного сценария.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="glass p-6 md:p-8 text-center">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, rgba(201,107,77,0.15), rgba(201,107,77,0.05));">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <div class="font-heading text-4xl md:text-5xl font-bold mb-2 text-terracotta-500">13,85M</div>
+        <div class="text-sm font-semibold mb-3 text-slate-800 dark:text-slate-100">Выручка кухни, руб/мес</div>
+        <p class="text-sm leading-relaxed text-slate-400 dark:text-slate-500">Пицца + роллы + десерты + напитки. Средний чек: 1 800 – 3 200 руб.</p>
+      </div>
+      <div class="glass p-6 md:p-8 text-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-10 dark:opacity-5" style="background:#7a9b7e;"></div>
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, rgba(122,155,126,0.15), rgba(122,155,126,0.05));">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="font-heading text-4xl md:text-5xl font-bold mb-2 text-sage-400">5M+</div>
+        <div class="text-sm font-semibold mb-3 text-slate-800 dark:text-slate-100">Чистая прибыль, руб/мес</div>
+        <p class="text-sm leading-relaxed text-slate-400 dark:text-slate-500">Рентабельность 33%. Прибыль платформы: 6% с заказов 30+ резидентов.</p>
+      </div>
+      <div class="glass p-6 md:p-8 text-center">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, rgba(168,126,79,0.15), rgba(168,126,79,0.05));">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#a87e4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="font-heading text-4xl md:text-5xl font-bold mb-2 text-beige-700">45 дн</div>
+        <div class="text-sm font-semibold mb-3 text-slate-800 dark:text-slate-100">Окупаемость для инвестора</div>
+        <p class="text-sm leading-relaxed text-slate-400 dark:text-slate-500">От 45 до 130 дней в зависимости от объёма участия. Пассивный доход после окупаемости.</p>
+      </div>
+    </div>
+
+    <!-- Cost structure table -->
+    <div class="glass p-6 md:p-8 mb-8">
+      <h3 class="font-heading text-xl font-bold mb-5 text-slate-800 dark:text-slate-100">Структура расходов кухни, руб/мес</h3>
+      <div class="space-y-4">
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-slate-600 dark:text-slate-300">Комиссия Гостинки (21%)</span>
+          <span class="font-bold text-terracotta-500">2 910 000</span>
+        </div>
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-slate-600 dark:text-slate-300">Food cost (30%)</span>
+          <span class="font-bold text-terracotta-500">4 160 000</span>
+        </div>
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-slate-600 dark:text-slate-300">ФОТ, фикс (25 000 руб/день)</span>
+          <span class="font-bold text-sage-400">750 000</span>
+        </div>
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-slate-600 dark:text-slate-300">Налоги УСН 15% + прочее</span>
+          <span class="font-bold text-sage-400">менее 1 390 000</span>
+        </div>
+        <div class="border-t pt-3 flex justify-between items-center text-sm" style="border-color: rgba(0,0,0,0.08);">
+          <span class="font-bold text-slate-800 dark:text-slate-100">Итого расходы</span>
+          <span class="font-bold text-slate-800 dark:text-slate-100">не более 9 200 000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platform revenue -->
+    <div class="glass p-6 md:p-8 mb-8">
+      <h3 class="font-heading text-xl font-bold mb-2 text-slate-800 dark:text-slate-100">Прибыль платформы (6% с заказов 30+ резидентов)</h3>
+      <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Доход с каждого товара в чеке, даже если его произвёл другой резидент</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="text-center p-3 rounded-xl" style="background: rgba(122,155,126,0.08);">
+          <div class="font-heading text-xl font-bold text-sage-400">777K – 1,17M</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">Реалистичный сценарий, руб/мес</div>
+        </div>
+        <div class="text-center p-3 rounded-xl" style="background: rgba(201,107,77,0.08);">
+          <div class="font-heading text-xl font-bold text-terracotta-500">до 1 800 000</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">Оптимистичный сценарий, руб/мес</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-xl font-bold text-terracotta-500">1 800 – 3 200</div>
+        <div class="text-xs mt-1.5 text-slate-400 dark:text-slate-500">Средний чек, руб</div>
+      </div>
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-xl font-bold text-sage-400">до 30%</div>
+        <div class="text-xs mt-1.5 text-slate-400 dark:text-slate-500">Food cost</div>
+      </div>
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-xl font-bold text-beige-700">0 руб</div>
+        <div class="text-xs mt-1.5 text-slate-400 dark:text-slate-500">Фикс. аренда (21% от выручки)</div>
+      </div>
+      <div class="glass p-4 text-center">
+        <div class="font-heading text-xl font-bold text-terracotta-500">6%</div>
+        <div class="text-xs mt-1.5 text-slate-400 dark:text-slate-500">Доход с каждого заказа</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========= INVESTMENT STRUCTURE ========= -->
+<section id="invest" class="section-sage py-16 md:py-24 px-6">
+  <div class="mx-auto max-w-6xl">
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-sage-400">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        Структура инвестиций
+      </div>
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4 text-slate-800 dark:text-slate-100">Запрос к партнёру: 2 – 4 млн руб.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="glass p-6 text-center">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, rgba(201,107,77,0.15), rgba(201,107,77,0.05));">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="font-heading text-2xl font-bold mb-2 text-terracotta-500">1 500 000</div>
+        <div class="text-sm font-semibold mb-3 text-slate-800 dark:text-slate-100">Обеспечительный платёж</div>
+        <p class="text-sm leading-relaxed text-slate-400 dark:text-slate-500">Депозит по договору субаренды. Засчитывается в счёт последнего месяца аренды.</p>
+      </div>
+      <div class="glass p-6 text-center">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, rgba(122,155,126,0.15), rgba(122,155,126,0.05));">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        </div>
+        <div class="font-heading text-2xl font-bold mb-2 text-sage-400">500K – 1M</div>
+        <div class="text-sm font-semibold mb-3 text-slate-800 dark:text-slate-100">Оборотка и ФОТ на июнь</div>
+        <p class="text-sm leading-relaxed text-slate-400 dark:text-slate-500">Закупка продуктов, расходные материалы, зарплата команде в первый месяц.</p>
+      </div>
+      <div class="glass p-6 text-center">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, rgba(168,126,79,0.15), rgba(168,126,79,0.05));">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#a87e4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="font-heading text-2xl font-bold mb-2 text-beige-700">1 000 000</div>
+        <div class="text-sm font-semibold mb-3 text-slate-800 dark:text-slate-100">Стабилизационный фонд</div>
+        <p class="text-sm leading-relaxed text-slate-400 dark:text-slate-500">Резерв на внештатные ситуации и форс-мажор. Расходуется только по согласованию.</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="glass p-6 md:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          <h3 class="font-heading text-xl font-bold text-slate-800 dark:text-slate-100">Ревеню-шеринг 20%</h3>
+        </div>
+        <div class="text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+          <div class="flex justify-between"><span>Выплата партнёру</span><span class="font-bold text-slate-800 dark:text-slate-100">от 1 млн руб/мес</span></div>
+          <div class="flex justify-between"><span>Окупаемость</span><span class="font-bold text-terracotta-500">55 – 130 дней</span></div>
+        </div>
+      </div>
+      <div class="glass p-6 md:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3 class="font-heading text-xl font-bold text-slate-800 dark:text-slate-100">Долевое участие 25%</h3>
+        </div>
+        <div class="text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+          <div class="flex justify-between"><span>Выплата партнёру</span><span class="font-bold text-slate-800 dark:text-slate-100">от 1,25 млн руб/мес</span></div>
+          <div class="flex justify-between"><span>Окупаемость</span><span class="font-bold text-sage-400">45 – 110 дней</span></div>
+        </div>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-3">Пассивный доход в том же объёме после окупаемости (12 мес.)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========= PLATFORM / TECH ========= -->
+<section id="tech" class="bg-beige-100 dark:bg-darkbg py-16 md:py-24 px-6">
+  <div class="mx-auto max-w-6xl">
+    <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+      <div>
+        <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-terracotta-500">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Платформа «Амбар»
+        </div>
+        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6 leading-tight text-slate-800 dark:text-slate-100">QR-заказ. Единая корзина. Мгновенный доступ.</h2>
+        <p class="text-base leading-relaxed mb-6 text-slate-600 dark:text-slate-300">
+          Гость сканирует QR-код на столике, выбирает блюда из любого заведения фуд-молла,
+          оплачивает одним чеком и получает заказ за столик. Без установки приложений.
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5" style="background: rgba(122,155,126,0.15);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold mb-0.5 text-slate-800 dark:text-slate-100">Доход 6% с каждого товара</div>
+              <p class="text-sm text-slate-400 dark:text-slate-500">Даже если его произвёл другой резидент фуд-молла</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5" style="background: rgba(122,155,126,0.15);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold mb-0.5 text-slate-800 dark:text-slate-100">Эксклюзив на 30+ заведений</div>
+              <p class="text-sm text-slate-400 dark:text-slate-500">Платформа согласована с администрацией «Главного Двора»</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5" style="background: rgba(122,155,126,0.15);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold mb-0.5 text-slate-800 dark:text-slate-100">Веб-формат по QR</div>
+              <p class="text-sm text-slate-400 dark:text-slate-500">Мгновенный запуск, высокая конверсия без барьера установки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="glass p-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span class="font-semibold text-sm text-slate-800 dark:text-slate-100">IT-команда: 6 специалистов</span>
+          </div>
+          <p class="text-sm pl-9 text-slate-400 dark:text-slate-500">Разработка, поддержка, администрирование 24/7</p>
+        </div>
+        <div class="glass p-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            <span class="font-semibold text-sm text-slate-800 dark:text-slate-100">Собственные серверы</span>
+          </div>
+          <p class="text-sm pl-9 text-slate-400 dark:text-slate-500">Программное обеспечение и техподдержка 24/7</p>
+        </div>
+        <div class="glass p-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            <span class="font-semibold text-sm text-slate-800 dark:text-slate-100">Банк Точка — партнёр</span>
+          </div>
+          <p class="text-sm pl-9 text-slate-400 dark:text-slate-500">Интеграция платежей, эквайринг, автоматизация взаиморасчётов, фискализация (161-ФЗ)</p>
+        </div>
+        <div class="glass p-5">
+          <div class="flex items-center gap-3 mb-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10M8 11l4 4 4-4M4 17h16v4H4z"/></svg>
+            <span class="font-semibold text-sm text-slate-800 dark:text-slate-100">Масштабирование</span>
+          </div>
+          <p class="text-sm pl-9 text-slate-400 dark:text-slate-500">Тиражирование на другие фуд-моллы и ТРЦ. Интеграция в экосистему LOVII с ростом оценки актива.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========= NEXT STEPS ========= -->
+<section class="section-alt py-16 md:py-20 px-6">
+  <div class="mx-auto max-w-4xl">
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest mb-4 text-terracotta-500">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Следующие шаги
+      </div>
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-800 dark:text-slate-100 mb-3">Как начать</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="glass p-5 text-center">
+        <div class="w-10 h-10 mx-auto mb-3 rounded-full flex items-center justify-center text-white font-bold text-sm dot-terracotta">1</div>
+        <div class="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">Подписать NDA</div>
+        <p class="text-xs text-slate-400 dark:text-slate-500">По запросу</p>
+      </div>
+      <div class="glass p-5 text-center">
+        <div class="w-10 h-10 mx-auto mb-3 rounded-full flex items-center justify-center text-white font-bold text-sm dot-sage">2</div>
+        <div class="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">Обмен документами</div>
+        <p class="text-xs text-slate-400 dark:text-slate-500">Договор субаренды, письмо от Гостиного Двора</p>
+      </div>
+      <div class="glass p-5 text-center">
+        <div class="w-10 h-10 mx-auto mb-3 rounded-full flex items-center justify-center text-white font-bold text-sm dot-beige">3</div>
+        <div class="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">Встреча или звонок</div>
+        <p class="text-xs text-slate-400 dark:text-slate-500">Демонстрация помещения, оборудования, прототипа</p>
+      </div>
+      <div class="glass p-5 text-center">
+        <div class="w-10 h-10 mx-auto mb-3 rounded-full flex items-center justify-center text-white font-bold text-sm dot-terracotta">4</div>
+        <div class="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-1">Внесение средств</div>
+        <p class="text-xs text-slate-400 dark:text-slate-500">Старт проекта 1 июня 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========= CTA ========= -->
+<section class="section-dark py-16 md:py-24 px-6">
+  <div class="mx-auto max-w-3xl text-center">
+    <div class="glass inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+      <span class="text-sm font-medium text-white/70">ООО «Атмосфера»</span>
+    </div>
+
+    <h2 class="font-heading text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+      Не просто инвестиция в общепит.
+      <span class="block text-gradient">Это вход в цифровую экосистему.</span>
+    </h2>
+
+    <p class="text-base md:text-lg mb-10 leading-relaxed text-white/60 max-w-xl mx-auto">
+      Гарантированный трафик, подтверждённые метрики, окупаемость для инвестора от 1,5 месяцев.
+      Готовы обсудить детали сегодня или завтра.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center no-print">
+      <a href="tel:+79119287478" class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-base font-semibold text-white rounded-full btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        +7 (911) 928-74-78
+      </a>
+      <a href="https://wa.me/79119287478" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-base font-semibold rounded-full transition-all duration-200 border border-white/20 text-white hover:bg-white/5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp
+      </a>
+      <a href="mailto:hello@arental.ru" class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-base font-semibold rounded-full transition-all duration-200 border border-white/20 text-white hover:bg-white/5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+        hello@arental.ru
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========= FOOTER ========= -->
+<footer id="contacts" class="bg-beige-100 dark:bg-darkbg py-12 pb-24 px-6">
+  <div class="mx-auto max-w-6xl">
+
+    <!-- Downloads -->
+    <div id="downloads" class="mb-10">
+      <h4 class="font-heading text-lg font-bold mb-4 text-slate-800 dark:text-slate-100">Скачать предложение</h4>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <a href="ambar-proposal.pdf" download class="download-card p-4 flex items-center gap-3 no-underline">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div><div class="text-sm font-semibold text-slate-800 dark:text-slate-100">PDF</div><div class="text-xs text-slate-400 dark:text-slate-500">89 КБ</div></div>
+        </a>
+        <a href="ambar-proposal.docx" download class="download-card p-4 flex items-center gap-3 no-underline">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7a9b7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div><div class="text-sm font-semibold text-slate-800 dark:text-slate-100">DOCX</div><div class="text-xs text-slate-400 dark:text-slate-500">43 КБ</div></div>
+        </a>
+        <a href="ambar-proposal.md" download class="download-card p-4 flex items-center gap-3 no-underline">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a87e4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div><div class="text-sm font-semibold text-slate-800 dark:text-slate-100">Markdown</div><div class="text-xs text-slate-400 dark:text-slate-500">16 КБ</div></div>
+        </a>
+        <a href="ambar-proposal.txt" download class="download-card p-4 flex items-center gap-3 no-underline">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#54545f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div><div class="text-sm font-semibold text-slate-800 dark:text-slate-100">TXT</div><div class="text-xs text-slate-400 dark:text-slate-500">16 КБ</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#c96b4d"/><path d="M8 12h16M8 16h16M8 20h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <span class="font-heading text-xl font-bold text-slate-800 dark:text-slate-100">AMBAR</span>
+        </div>
+        <p class="text-sm leading-relaxed text-slate-400 dark:text-slate-500">Фуд-хаб и цифровая платформа «Главный Двор». Проект ООО «Атмосфера».</p>
+      </div>
+      <div>
+        <h4 class="font-heading text-lg font-bold mb-4 text-slate-800 dark:text-slate-100">Контакты</h4>
+        <div class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+          <div class="flex items-center gap-2.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <a href="tel:+79119287478" class="hover:underline">+7 (911) 928-74-78</a>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <a href="https://wa.me/79119287478" target="_blank" rel="noopener" class="hover:underline">WhatsApp</a>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+            <a href="mailto:hello@arental.ru" class="hover:underline">hello@arental.ru</a>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c96b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Невский пр., 35, Санкт-Петербург</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-heading text-lg font-bold mb-4 text-slate-800 dark:text-slate-100">Генеральный директор</h4>
+        <p class="text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">Кузюков Сергей Сергеевич</p>
+        <p class="text-sm text-slate-400 dark:text-slate-500">ООО «Атмосфера»</p>
+        <p class="text-sm text-slate-400 dark:text-slate-500">ИНН 7842216839</p>
+      </div>
+    </div>
+    <div class="border-t pt-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-slate-400 dark:text-slate-500" style="border-color: rgba(0,0,0,0.06);">
+      <span>2026, ООО «Атмосфера». Все права защищены.</span>
+      <span>Старт: 1 июня 2026. Открытие: 15 июня 2026.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="sticky-cta" class="sticky-cta no-print">
+  <span class="text-sm text-slate-500 dark:text-slate-400">Запрос:</span>
+  <span class="sticky-cta-value text-terracotta-500">2 – 4 млн руб.</span>
+  <span class="w-px h-6 bg-slate-200 dark:bg-slate-700 hidden sm:block"></span>
+  <span class="text-sm text-slate-500 dark:text-slate-400 hidden sm:inline">Окупаемость:</span>
+  <span class="sticky-cta-value text-sage-400 hidden sm:inline">от 45 дней</span>
+  <a href="#downloads" class="inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold text-white rounded-full btn-primary">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10M8 11l4 4 4-4M4 17h16v4H4z"/></svg>
+    Скачать PDF
+  </a>
+</div>
+
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Наверх" class="no-print">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.contains('dark');
+    if (isDark) { html.classList.remove('dark'); html.classList.add('light'); localStorage.setItem('theme','light'); }
+    else { html.classList.remove('light'); html.classList.add('dark'); localStorage.setItem('theme','dark'); }
+  }
+  (function() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
+    }
+  })();
+
+  const btn = document.getElementById('back-to-top');
+  const sticky = document.getElementById('sticky-cta');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 600) {
+      btn.classList.add('visible');
+      sticky.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+      sticky.classList.remove('visible');
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2d35"/>
+      <stop offset="100%" style="stop-color:#1e1e24"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c96b4d"/>
+      <stop offset="50%" style="stop-color:#a87e4f"/>
+      <stop offset="100%" style="stop-color:#7a9b7e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="100" r="250" fill="#c96b4d" opacity="0.06"/>
+  <circle cx="200" cy="500" r="200" fill="#7a9b7e" opacity="0.06"/>
+
+  <!-- Logo -->
+  <rect x="60" y="60" width="64" height="64" rx="16" fill="#c96b4d"/>
+  <path d="M76 84h32M76 92h32M76 100h24" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="140" y="102" font-family="Georgia,serif" font-size="40" font-weight="bold" fill="#e8e8ea">AMBAR</text>
+
+  <!-- Main heading -->
+  <text x="60" y="240" font-family="Georgia,serif" font-size="72" font-weight="bold" fill="#fff">
+    <tspan>Food Hub</tspan>
+    <tspan fill="url(#brand)"> + Digital Platform</tspan>
+  </text>
+
+  <text x="60" y="310" font-family="Arial,sans-serif" font-size="26" fill="#b0b0b7">
+    Инвестиционное предложение 2026
+  </text>
+
+  <!-- Metrics -->
+  <g transform="translate(60, 380)">
+    <rect x="0" y="0" width="240" height="140" rx="20" fill="rgba(255,255,255,0.05)"/>
+    <text x="120" y="50" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="bold" fill="#c96b4d">13,85M</text>
+    <text x="120" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#878792">Выручка, руб/мес</text>
+    <text x="120" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#6c6c77">Пицца + роллы + десерты</text>
+  </g>
+
+  <g transform="translate(330, 380)">
+    <rect x="0" y="0" width="240" height="140" rx="20" fill="rgba(255,255,255,0.05)"/>
+    <text x="120" y="50" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="bold" fill="#7a9b7e">5M+</text>
+    <text x="120" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#878792">Прибыль, руб/мес</text>
+    <text x="120" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#6c6c77">Рентабельность 33%</text>
+  </g>
+
+  <g transform="translate(600, 380)">
+    <rect x="0" y="0" width="240" height="140" rx="20" fill="rgba(255,255,255,0.05)"/>
+    <text x="120" y="50" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="bold" fill="#a87e4f">45 дн</text>
+    <text x="120" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#878792">Окупаемость</text>
+    <text x="120" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#6c6c77">для инвестора</text>
+  </g>
+
+  <g transform="translate(870, 380)">
+    <rect x="0" y="0" width="240" height="140" rx="20" fill="rgba(255,255,255,0.05)"/>
+    <text x="120" y="50" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="bold" fill="#c96b4d">30+</text>
+    <text x="120" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#878792">Резидентов</text>
+    <text x="120" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#6c6c77">Единая QR-корзина</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="60" y="580" font-family="Arial,sans-serif" font-size="14" fill="#6c6c77">Невский пр., 35, Гостиный Двор, Санкт-Петербург</text>
+  <text x="1140" y="580" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#6c6c77">ООО «Атмосфера»</text>
+</svg>
